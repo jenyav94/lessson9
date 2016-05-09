@@ -3,13 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
-
 
     <FrameLayout
         android:id="@+id/fragment_main_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/fragment_extend_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
 
 </LinearLayout>

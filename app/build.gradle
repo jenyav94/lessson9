@@ -5,8 +5,8 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.csc.lesson9"
-        minSdkVersion 15
+        applicationId "com.csc.jv.weather"
+        minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -24,4 +24,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:support-v4:23.3.0'
     compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
 }

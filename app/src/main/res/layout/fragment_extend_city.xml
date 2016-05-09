@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ExtendCityFragment">
+
+    <TextView
+        android:id="@+id/update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="19:28" />
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="St Petersburg"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/weather_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Clear sky"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/text_margin"
+        android:text="30"
+        android:textAlignment="center"
+        android:textSize="80dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/humidity_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:text="Humidity:"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:text="78 %"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/wind_speed_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:text="Wind speed:"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/wind_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pressure_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:text="Pressure:"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/clouds_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:text="Clouds:"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/clouds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
