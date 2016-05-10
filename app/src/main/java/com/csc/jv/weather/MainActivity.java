@@ -152,7 +152,9 @@ public class MainActivity extends AppCompatActivity implements
                                 + MainActivity.APPID
                                 + MainActivity.API_KEY;
 
-                        intent.setAction(WeatherService.FORECAST).putExtra(WeatherService.FORECAST_URL, urlString);
+                        intent.setAction(WeatherService.FORECAST)
+                                .putExtra(WeatherService.FORECAST_URL, urlString);
+
                         startService(intent);
                     }
                 })

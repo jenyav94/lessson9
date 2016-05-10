@@ -72,6 +72,11 @@ public class WeatherService extends IntentService {
                             }
                         }
 
+                        Intent responseIntent = new Intent();
+                        responseIntent.setAction(RESPONSE);
+                        responseIntent.addCategory(Intent.CATEGORY_DEFAULT);
+                        sendBroadcast(responseIntent);
+
                         cursor.close();
                     }
 
